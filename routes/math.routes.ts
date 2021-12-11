@@ -1,11 +1,13 @@
 import * as express from 'express';
-import { MyLogic } from "../modules";
+import { MathLogic, MyLogic } from '../modules';
 import DiContainer from '../injection/container';
 
 
+const diContainer = new DiContainer();
+diContainer.register('MyLogic', new MyLogic());
+diContainer.register('MathLogic', new MathLogic());
 
 const router = express.Router();
-const diContainer: DiContainer = express.application.get('diContainer');
 
 router.get('/math/:id', (req, res) => {
     const myLogic: MyLogic = diContainer.get('MyLogic');

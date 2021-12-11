@@ -29,6 +29,7 @@ class DiContainer {
         this.inject = (factory) => {
             const fnArgs = parseFunc.parse(factory).args
                 .map(dependency => this.get(dependency));
+            // eslint-disable-next-line prefer-spread
             return factory.apply(null, fnArgs);
         };
         this.dependencies = {};

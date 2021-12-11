@@ -18,11 +18,18 @@ var __importStar = (this && this.__importStar) || function (mod) {
     __setModuleDefault(result, mod);
     return result;
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.mathRoutes = void 0;
 const express = __importStar(require("express"));
+const modules_1 = require("../modules");
+const container_1 = __importDefault(require("../injection/container"));
+const diContainer = new container_1.default();
+diContainer.register('MyLogic', new modules_1.MyLogic());
+diContainer.register('MathLogic', new modules_1.MathLogic());
 const router = express.Router();
-const diContainer = express.application.get('diContainer');
 router.get('/math/:id', (req, res) => {
     const myLogic = diContainer.get('MyLogic');
     const id = req.params.id;

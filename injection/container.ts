@@ -2,7 +2,7 @@ import parseFunction from 'parse-function';
 
 const parseFunc = parseFunction({
     ecmaVersion: 2017
-})
+});
 
 class DiContainer {
     constructor() {
@@ -36,8 +36,9 @@ class DiContainer {
     inject = (factory) => {
         const fnArgs = parseFunc.parse(factory).args
             .map(dependency => this.get(dependency));
+        // eslint-disable-next-line prefer-spread
         return factory.apply(null, fnArgs);
     }
 }
 
-export default DiContainer
+export default DiContainer;

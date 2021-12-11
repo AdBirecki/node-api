@@ -4,4 +4,4 @@ class MathLogic {
     }
 }
 
-export default MathLogic
+export default MathLogic;

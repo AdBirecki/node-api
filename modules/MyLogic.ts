@@ -4,4 +4,4 @@ class MyLogic {
     }
 }
 
-export default MyLogic
+export default MyLogic;

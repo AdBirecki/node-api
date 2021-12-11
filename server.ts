@@ -15,14 +15,7 @@ function start() {
     captains.log('Using ENV variables');
   }
 
-
-  const diContainer = new DiContainer();
-  diContainer.register('MyLogic', new MyLogic());
-  diContainer.register('MathLogic', new MathLogic());
-
   const app = express();
-  app.set('diContainer', diContainer);
-  
   const port = process.env.PORT || 7070;
   const www = process.env.WWW || './';
   app.use(bodyParser.json());

@@ -1,1 +1,1 @@
-{"version":3,"file":"MathLogic.js","sourceRoot":"","sources":["../../modules/MathLogic.ts"],"names":[],"mappings":";;AAAA,MAAM,SAAS;IACX,GAAG,CAAC,CAAC,EAAE,CAAC;QACJ,OAAO,CAAC,GAAG,CAAC,GAAG,CAAC,CAAC;IACrB,CAAC;CACJ;AAED,kBAAe,SAAS,CAAA"}
+{"version":3,"file":"MathLogic.js","sourceRoot":"","sources":["../../modules/MathLogic.ts"],"names":[],"mappings":";;AAAA,MAAM,SAAS;IACX,GAAG,CAAC,CAAC,EAAE,CAAC;QACJ,OAAO,CAAC,GAAG,CAAC,GAAG,CAAC,CAAC;IACrB,CAAC;CACJ;AAED,kBAAe,SAAS,CAAC"}
