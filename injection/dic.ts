@@ -1,1 +1,0 @@
-const parseFunction = require('parse-function')

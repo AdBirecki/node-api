@@ -8,5 +8,7 @@ const express_1 = __importDefault(require("express"));
 const router = express_1.default.Router();
 exports.router = router;
 const vacation_routes_1 = require("./vacation.routes");
+const math_routes_1 = require("./math.routes");
 router.use('/', vacation_routes_1.vacationRoutes);
+router.use('/', math_routes_1.mathRoutes);
 //# sourceMappingURL=index.js.map
